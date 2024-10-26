@@ -1,0 +1,11 @@
+.events {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/landing-bg.webp'); /* Updated image path */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  color: white; /* Change text color for visibility */
+}

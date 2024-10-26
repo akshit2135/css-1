@@ -1,14 +1,24 @@
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Home from './components/Home'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Events from './components/Events';
+import Team from './components/Team';
+import './App.css';
+
 function App() {
   return (
-    <>
-      <BrowserRouter>
-      <Routes>
-        <Route path="/" element ={<Home />} />
-      </Routes>
-      </BrowserRouter>
-    </>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<><Hero /><About /></>} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/team" element={<Team />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

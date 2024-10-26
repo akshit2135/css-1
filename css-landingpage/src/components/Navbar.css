@@ -1,0 +1,74 @@
+.navbar {
+  background-color: transparent; /* Initial transparent background */
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+  padding: 0.5rem; /* Adjust padding */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between logo and buttons */
+  align-items: center; /* Center items */
+}
+
+.navbar.scrolled {
+  background-color: black; /* Background color when scrolled */
+}
+
+.navbar .MuiButton-root {
+  color: #FFFFFF; /* Initial button text color */
+  transition: color 0.3s ease; /* Smooth transition for text color change */
+}
+
+.navbar.scrolled .MuiButton-root {
+  color: white; /* Button text color when scrolled */
+}
+
+.navbar img {
+  height: 50px; /* Height for the logo */
+  margin-right: 1rem; /* Space between logo and buttons */
+}
+
+.menu-button {
+  display: none; /* Hide menu button by default */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex; /* Default display for larger screens */
+  align-items: center; /* Center items vertically */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .menu-button {
+    display: block; /* Show menu button on mobile */
+  }
+
+  .nav-links {
+    display: none; /* Hide links initially */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute; /* Position absolute for dropdown effect */
+    top: 60px; /* Adjust according to your navbar height */
+    left: 0; /* Align to the left */
+    background-color: black; /* Background color for dropdown */
+    width: 100%; /* Full width */
+  }
+
+  .nav-links.open {
+    display: flex; /* Show links when open */
+  }
+
+  .nav-links button {
+    color: white; /* Button text color */
+    padding: 1rem; /* Padding for buttons */
+    text-align: center; /* Center text */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on very small screens */
+    align-items: center; /* Center items */
+  }
+
+  .navbar .MuiButton-root {
+    margin: 0.5rem 0; /* Space between buttons */
+  }
+}

@@ -1,0 +1,22 @@
+.gallery {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .gallery h2 {
+    color: #8C75FF;
+    font-size: 2rem;
+  }
+  
+  .image-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

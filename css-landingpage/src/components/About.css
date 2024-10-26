@@ -1,51 +1,51 @@
 .about-container {
-  height: 100vh; /* Full viewport height */
-  display: flex; /* Use flexbox for alignment */
-  flex-direction: column; /* Arrange items vertically */
-  justify-content: center; /* Center items vertically */
-  align-items: center; /* Center items horizontally */
-  padding: 2rem; /* Space around the content */
-  background-color: #f5f5f5; /* Light background color */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f5f5f5;
 }
 
 .about-heading {
-  font-size: 3rem; /* Size of the heading */
-  color: #000; /* Black text color */
-  background: linear-gradient(to right, #8C75FF, #8C75FF); /* Use primary color */
-  background-clip: text; /* Clip background to text */
-  color: transparent; /* Make text transparent to show the gradient */
-  margin-bottom: 2rem; /* Space below heading */
+  font-size: 3rem;
+  color: #000;
+  background: linear-gradient(to right, #8C75FF, #8C75FF);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 2rem;
 }
 
 .card {
-  margin: 1rem; /* Space between cards */
-  border-radius: 8px; /* Rounded corners for the card */
-  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2); /* Increased shadow effect */
-  height: 100%; /* Ensure cards take full height */
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 16px 16px rgba(0, 0, 0, 0.2);
+  height: 100%;
 }
 
 .card-title {
-  font-weight: 600; /* Font weight for card title */
-  font-size: 1.5rem; /* Font size for better visibility */
-  background: linear-gradient(to right, #8C75FF, #000); /* Gradient mix of primary color and black */
-  -webkit-background-clip: text; /* Clip background to text */
-  -webkit-text-fill-color: transparent; /* Transparent fill for gradient effect */
+  font-weight: 600;
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #8C75FF, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h5 {
-  color: #333; /* Darker color for better readability */
+  color: #333;
 }
 
 body {
-  font-family: Arial, sans-serif; /* General font for the page */
+  font-family: Arial, sans-serif;
 }
-/* Add this to existing About.css */
+
 @media (max-width: 768px) {
   .about {
-    padding: 1rem; /* Less padding on smaller screens */
+    padding: 1rem;
   }
 
   .card {
-    width: 90%; /* Full width on mobile */
+    width: 90%; 
   }
 }

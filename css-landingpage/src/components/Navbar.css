@@ -1,74 +1,74 @@
 .navbar {
-  background-color: transparent; /* Initial transparent background */
-  transition: background-color 0.3s ease; /* Smooth transition for color change */
-  padding: 0.5rem; /* Adjust padding */
-  display: flex; /* Flexbox layout */
-  justify-content: space-between; /* Space between logo and buttons */
-  align-items: center; /* Center items */
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar.scrolled {
-  background-color: black; /* Background color when scrolled */
+  background-color: black;
 }
 
 .navbar .MuiButton-root {
-  color: #FFFFFF; /* Initial button text color */
-  transition: color 0.3s ease; /* Smooth transition for text color change */
+  color: #FFFFFF;
+  transition: color 0.3s ease;
 }
 
 .navbar.scrolled .MuiButton-root {
-  color: white; /* Button text color when scrolled */
+  color: white;
 }
 
 .navbar img {
-  height: 50px; /* Height for the logo */
-  margin-right: 1rem; /* Space between logo and buttons */
+  height: 50px;
+  margin-right: 1rem;
 }
 
 .menu-button {
-  display: none; /* Hide menu button by default */
+  display: none;
 }
 
-/* Navigation Links */
+
 .nav-links {
-  display: flex; /* Default display for larger screens */
-  align-items: center; /* Center items vertically */
+  display: flex;
+  align-items: center;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
   .menu-button {
-    display: block; /* Show menu button on mobile */
+    display: block;
   }
 
   .nav-links {
-    display: none; /* Hide links initially */
-    flex-direction: column; /* Stack links vertically */
-    position: absolute; /* Position absolute for dropdown effect */
-    top: 60px; /* Adjust according to your navbar height */
-    left: 0; /* Align to the left */
-    background-color: black; /* Background color for dropdown */
-    width: 100%; /* Full width */
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: black;
+    width: 100%;
   }
 
   .nav-links.open {
-    display: flex; /* Show links when open */
+    display: flex;
   }
 
   .nav-links button {
-    color: white; /* Button text color */
-    padding: 1rem; /* Padding for buttons */
-    text-align: center; /* Center text */
+    color: white;
+    padding: 1rem;
+    text-align: center;
   }
 }
 
 @media (max-width: 480px) {
   .navbar {
-    flex-direction: column; /* Stack items vertically on very small screens */
-    align-items: center; /* Center items */
+    flex-direction: column;
+    align-items: center;
   }
 
   .navbar .MuiButton-root {
-    margin: 0.5rem 0; /* Space between buttons */
+    margin: 0.5rem 0;
   }
 }

@@ -1,12 +1,12 @@
 .team {
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../assets/landing-bg.webp'); /* Updated image path */
-    background-size: cover; /* Cover the entire area */
-    background-position: center; /* Center the image */
-    color: white; /* Change text color for visibility */
+    background-image: url('../assets/landing-bg.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
   }
   
